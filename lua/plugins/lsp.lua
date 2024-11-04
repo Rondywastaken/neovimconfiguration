@@ -12,7 +12,7 @@ return {
         "williamboman/mason-lspconfig.nvim",
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = { "lua_ls", "fsautocomplete" },
+                ensure_installed = { "lua_ls", "fsautocomplete", "clangd" },
             })
         end
     },
@@ -26,6 +26,10 @@ return {
             lspconfig.lua_ls.setup({
                 capabilities = capabilities
 
+            })
+
+            lspconfig.clangd.setup({
+                capabilities = capabilities
             })
 
             -- Keymaps for lsps
