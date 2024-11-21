@@ -12,8 +12,13 @@ return {
                 close_if_last_window = true,
                 window = {
                     position = "right",
-                    width = 30
+                    width = 25
                 }
+            })
+            vim.api.nvim_create_autocmd("VimEnter", {
+                callback = function()
+                    vim.cmd("Neotree show")
+                end
             })
             vim.keymap.set("n", '<leader>p', ':Neotree<CR>')
         end
