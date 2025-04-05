@@ -8,6 +8,7 @@ vim.cmd("set softtabstop=4")
 vim.cmd("set shiftwidth=4")
 vim.cmd("set number")
 vim.cmd("set relativenumber")
+vim.cmd("hi LineNr guibg=NONE")
 
 -- Set nvim to be transparent
 vim.cmd [[

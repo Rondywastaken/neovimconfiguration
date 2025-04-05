@@ -1,12 +1,12 @@
 return {
     {
-        "catppuccin/nvim",
+        "rebelot/kanagawa.nvim",
         lazy = false,
-        name = "catppuccin",
+        name = "kanagawa",
         priority = 1000,
+        theme = "lotus",
         config = function()
-         vim.cmd([[colorscheme catppuccin]])
+            vim.cmd("colorscheme kanagawa")
         end,
     },
 }
-
