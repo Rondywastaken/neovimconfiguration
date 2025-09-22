@@ -17,9 +17,6 @@ return {
                     "fsautocomplete",
                     "clangd",
                     "pylsp",
-                    "html",
-                    "ts_ls",
-                    "cssls",
                     "csharp_ls",
                 },
             })
@@ -42,18 +39,6 @@ return {
             })
 
             lspconfig.clangd.setup({
-                capabilities = capabilities
-            })
-
-            lspconfig.html.setup({
-                capabilities = capabilities
-            })
-
-            lspconfig.ts_ls.setup({
-                capabilities = capabilities
-            })
-
-            lspconfig.cssls.setup({
                 capabilities = capabilities
             })
 
